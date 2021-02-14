@@ -1,0 +1,69 @@
+/* General styles */
+:root{
+    --black: #000;
+    --white: #FFF;
+    --blue: #63FFFF;
+    --purple: #BCBAFD;
+    --purple-pink: #DEB3FF;
+    --pink: #FFB0DD;
+    --orange: #FFA0A0;
+    --yellow: #FFFCA8;
+    --yellow-green: #CCFFA5;
+    --green: #A5FFC9;
+}
+
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--black);
+    color: var(--white);
+    margin: 6.4%;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+
+nav{
+    display: none;
+}
+
+/* Specific styles */
+
+#footer{
+    border-top: 1px solid var(--white);
+    grid-area: footer;
+}
+
+#footer p{
+    padding-top: 4%;
+}
+
+#hamburger-menu{
+    justify-self: end;
+}
+
+#header{
+    grid-area: header;
+}
+
+#main{
+    grid-area: main;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#wrapper{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: 
+        'header header' 
+        'main main' 
+        'footer footer';
+}
