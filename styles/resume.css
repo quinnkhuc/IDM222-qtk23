@@ -1,0 +1,86 @@
+#download-link{
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    text-decoration: underline;
+}
+
+#education{
+    background-color: var(--pink);
+}
+
+#honors-awards{
+    background-color: var(--yellow);
+}
+
+.job-title{
+    font-style: italic;
+}
+
+#relevant-coursework{
+    background-color: var(--green);
+}
+
+#skills{
+    background-color: var(--orange);
+}
+
+#work-experience{
+    background-color: var(--purple);
+}
+
+/* Media Queries */
+@media (min-width: 768px){
+    #download-link{
+        margin-bottom: 1rem;
+        margin-top: 4rem;
+    }
+
+    #resume-content{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+            'education work-experience'
+            'skills work-experience'
+            'relevant-coursework honors-awards';
+        gap: 1rem;
+    }
+
+    #education-section{
+        grid-area: education;
+    }
+    
+    #honors-awards-section{
+        grid-area: honors-awards;
+    }
+
+    #relevant-coursework-section{
+        grid-area: relevant-coursework;
+    }
+    
+    #skills-section{
+        grid-area: skills;
+    }
+    
+    #work-experience-section{
+        grid-area: work-experience;
+    }
+}
+
+@media (min-width: 1280px){
+    #download-link{
+        margin-bottom: 1rem;
+        margin-top: 6rem;
+    }
+
+    #resume-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            'education work-experience honors-awards'
+            'skills work-experience relevant-coursework';
+        gap: 2rem;
+    }
+
+}
