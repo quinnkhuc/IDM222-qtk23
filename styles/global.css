@@ -41,6 +41,7 @@ nav{
 }
 
 #footer p{
+    font-weight: 300;
     padding-top: 4%;
 }
 
@@ -53,7 +54,6 @@ nav{
 }
 
 #main{
-    grid-area: main;
     margin-top: 10%;
     margin-bottom: 10%;
 }
