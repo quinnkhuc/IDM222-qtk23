@@ -27,25 +27,24 @@ body{
     color: var(--white);
     font-size: 1rem;
     font-weight: 300;
-    margin: 1.5rem;
 }
 
 h1{
     font-size: 3rem;
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 h2{
     font-size: 1.25rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
-    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
 }
 
 h3{
     font-weight: 600;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 
 header{
@@ -74,6 +73,7 @@ p, li{
 #footer{
     border-top: 1px solid var(--white);
     grid-area: footer;
+    width: 100%;
 }
 
 #footer p{
@@ -92,6 +92,7 @@ p, li{
     font-size: 1.25rem;
     font-weight: 400;
     grid-area: header;
+    width: 100%;
 }
 
 .list{
@@ -103,6 +104,7 @@ p, li{
     grid-area: main;
     margin-top: 8%;
     margin-bottom: 8%;
+    width: 100%;
 }
 
 #wrapper{
@@ -113,13 +115,14 @@ p, li{
         'header header' 
         'main main' 
         'footer footer';
+    margin: 1.5rem auto;
+    width: 90%;
 }
 
 /* Media queries */
-@media (min-width: 768px){
+@media (min-width: 500px){
     body{
         font-size: 1.125rem;
-        margin: 3rem;
     }
 
     p, li{
@@ -132,14 +135,17 @@ p, li{
 
     h2{
         font-size: 1.4rem;
-        margin-bottom: 1rem;
-        margin-top: 3rem;
-    }
-    
-    h3{
-        margin-top: 1rem;
     }
 
+
+    #wrapper{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+}
+
+@media (min-width: 750px){
     #hamburger-menu{
         display: none;
     }
@@ -153,12 +159,22 @@ p, li{
         display: flex;
         gap: 1.5rem;
     }
+
+    #wrapper{
+        margin: 3rem auto;
+        width: 90%;
+    }
 }
 
-@media (min-width: 1280px){
+@media (min-width: 900px){
+    #wrapper{
+        width: 80%;
+    }
+}
+
+@media (min-width: 1200px){
     body{
         font-size: 1.25rem;
-        margin: 3rem 8.25rem;
     }
 
     p, li{
@@ -167,5 +183,9 @@ p, li{
 
     h1{
         font-size: 3.8rem;
+    }
+
+    #wrapper{
+        width: 90%;
     }
 }
