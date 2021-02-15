@@ -57,6 +57,11 @@ img{
     max-width: 100%;
 }
 
+li{
+    margin-bottom: 0.1rem;
+    margin-top: 0.1rem;
+}
+
 nav{
     display: none;
 }
@@ -95,6 +100,10 @@ p, li{
     width: 100%;
 }
 
+.link{
+    text-decoration: underline;
+}
+
 .list{
     list-style: square;
     margin-left: 1rem;
@@ -110,12 +119,13 @@ p, li{
 #wrapper{
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 4rem auto 4rem;
     grid-template-areas: 
         'header header' 
         'main main' 
         'footer footer';
     margin: 1.5rem auto;
+    min-height: 100vh;
     width: 90%;
 }
 
@@ -123,6 +133,11 @@ p, li{
 @media (min-width: 500px){
     body{
         font-size: 1.125rem;
+    }
+
+    li{
+        margin-bottom: 0.25rem;
+        margin-top: 0.25rem;
     }
 
     p, li{
@@ -175,6 +190,11 @@ p, li{
 @media (min-width: 1200px){
     body{
         font-size: 1.25rem;
+    }
+
+    li{
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
     }
 
     p, li{

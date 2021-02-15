@@ -1,0 +1,73 @@
+form{
+    margin-top: 2rem;
+}
+
+lable{
+    margin-top: 1.5rem;
+}
+
+lable, input{
+    display: block;
+}
+
+input{
+    border: none;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#email, #name{
+    height: 2rem;
+    width: 100%;
+}
+
+#instruction{
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+#message{
+    height: 10rem;
+    width: 100%;
+}
+
+#submit-button{
+    background-color: var(--black);
+    border: 2px solid var(--white);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    width: 8rem;
+}
+
+@media(min-width: 768px){
+    #contact-info{
+        display: flex;
+        gap: 2rem;
+        flex-wrap: nowrap;
+    }
+
+    form{
+        flex: 1 1 0;
+        grid-area: form;
+        margin-top: 0;
+    }
+
+    lable{
+        margin-top: 0;
+    }
+    
+    input{
+        margin-bottom: 1.5rem;
+    }
+
+    #instruction{
+        margin-top: 0;
+    }
+
+    #instruction-social-media{
+        flex: 1 1 0;
+    }
+}

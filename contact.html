@@ -2,23 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/contact.css">
 </head>
 <body>
     <div id="wrapper">
         <div id="main">
             <main>
-                <h1>Contact</h1>
-                <p>You can reach out to me through any of the following social media platform:</p>
-                <ul>
-                    <li>Email: <a href="mailto:qtk23@drexel.edu">qtk23@drexel.edu</a></li>
-                    <li>GitHub: <a href="https://github.com/quinnkhuc" target="_blank">github.com/quinnkhuc</a></li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/quinnkhuc/" target="_blank">linkedin.com/in/quinnkhuc</a></li>
-                </ul>
+                <h1><b class="h1">CONTACT</b></h1>
+                <div id="contact-info">
+                    <div id="instruction-social-media">
+                        <p id="instruction">You can reach out to me by using the contact form, or through any of the following social media platform:</p>
+                        <ul id="social-media">
+                            <li class="list">Email: <a class="link" href="mailto:qtk23@drexel.edu">qtk23@drexel.edu</a></li>
+                            <li class="list">GitHub: <a class="link" href="https://github.com/quinnkhuc" target="_blank">github.com/quinnkhuc</a></li>
+                            <li class="list">Instagram: <a class="link" href="https://www.instagram.com/qtk05_/" target="_blank">instagram.com/qtk05_</a></li>
+                            <li class="list">LinkedIn: <a class="link" href="https://www.linkedin.com/in/quinnkhuc/" target="_blank">linkedin.com/in/quinnkhuc</a></li>
+                        </ul>
+                    </div>
+                    <form>
+                        <lable for="name">Name:</lable>
+                        <input type="text" name="name" id="name" required>
+                        <lable for="email">Email:</lable>
+                        <input type="text" name="email" id="email" required>
+                        <lable for="message">Message:</lable>
+                        <input type="text" name="message" id="message" required>
+                        <input type="submit" value="Submit" id="submit-button">
+                    </form>
+                </div>
             </main>
         </div>
 
@@ -36,7 +52,7 @@
                             <a href="resume.html">RESUME</a>
                         </li>
                         <li>
-                            <a href="contact.html">CONTACT</a>
+                            <a href="contact.html" class="active-page">CONTACT</a>
                         </li>
                     </ul>
                 </nav>
@@ -48,7 +64,7 @@
 
         <div id="footer">
             <footer>
-                <p>Copyright &copy; 2021 Quinn Khuc.</p>
+                <p>Check out the code for this website on <a href="https://github.com/quinnkhuc/IDM222-qtk23" target="_blank" class="link">GitHub</a></p>
             </footer>
         </div>
     </div>
