@@ -1,0 +1,113 @@
+figure{
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+figcaption{
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+p{
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+#card-sort-site-map{
+    background-color: var(--orange);
+}
+
+#final-design{
+    background-color: var(--purple);
+}
+
+#goals{
+    background-color: var(--orange);
+}
+
+#highlight{
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 2.5rem;
+}
+
+#introduction{
+    background-color: var(--purple);
+}
+
+#limitations{
+    background-color: var(--purple-pink);
+}
+
+#section{
+    display: none;
+}
+
+#takeaways{
+    background-color: var(--pink);
+}
+
+#weaknesses{
+    background-color: var(--pink);
+}
+
+.weaknesses{
+    color: var(--white);
+    font-weight: 600;
+    padding: 0;
+}
+
+#wireframes-color-typography{
+    background-color: var(--purple-pink);
+}
+
+@media (min-width: 768px){
+    figure{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+}
+
+@media (min-width: 1200px){
+    main{
+        display: grid;
+        grid-template-columns: 32% 2% auto;
+        grid-template-rows: 6rem auto;
+        grid-template-areas: 
+            'project-highlight . title'
+            'section . content';
+    }
+
+    #highlight{
+        grid-area: project-highlight;
+    }
+
+    #metadata-div{
+        height: 30rem;
+        position: sticky;
+        top: 12%;
+        overflow: hidden;
+    }
+
+    h1{
+        grid-area: title;
+    }
+
+    #section{
+        display: block;
+        grid-area: section;
+        margin-top: 2rem;
+        font-weight: 600;
+    }
+
+    #section li{
+        font-weight: 200;
+        list-style: decimal;
+        margin-left: 1.3rem;
+    }
+
+    #content{
+        grid-area: content;
+    }
+}

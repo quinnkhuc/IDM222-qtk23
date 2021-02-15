@@ -57,12 +57,12 @@
 
 @media (min-width: 1200px){
     #introduction{
-        width: 70%;
+        width: 60%;
     }
 
     #projects{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
         column-gap: 1rem;
         width: 100%;
     }
