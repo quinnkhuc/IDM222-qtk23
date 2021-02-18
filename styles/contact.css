@@ -71,3 +71,47 @@ input{
         flex: 1 1 0;
     }
 }
+
+@media (min-width: 1200px){
+    #contact-info{
+        display: grid;
+        grid-template-columns: 32% 2% auto;
+        grid-template-areas:
+            'instruction-social-media . form';
+        gap: 0;
+    }
+
+    form{
+        display: grid;
+        grid-template-columns: 49% 2% 49%;
+        grid-template-areas: 
+            'name . email'
+            'message message message'
+            'submit . .';
+        grid-area: form;
+    }
+
+    #name-div{
+        grid-area: name;
+    }
+
+    #email-div{
+        grid-area: email;
+    }
+
+    #message{
+        height: 15rem;
+    }
+
+    #message-div{
+        grid-area: message;
+    }
+
+    #submit-button{
+        grid-area: submit;
+    }
+
+    #instructionc-social-media{
+        grid-area: instruction-social-media;
+    }
+}
