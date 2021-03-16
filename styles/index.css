@@ -13,7 +13,7 @@
 }
 
 #portfolio h2{
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 300;
     margin-top: 2rem;
 }
@@ -26,6 +26,26 @@
     font-weight: 600;
     margin-top: 1rem;
     text-align: center;
+}
+
+#projects figure{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#projects figure div{
+    overflow: hidden;
+    width: 100%;
+}
+
+#projects a img{
+    transform: scale(1);
+	transition: .3s ease-in-out;
+}
+
+#projects a img:hover{
+    transform: scale(1.2);
 }
 
 #uiux-highlight{
